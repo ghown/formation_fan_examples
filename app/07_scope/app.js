@@ -5,13 +5,13 @@
 
 	app.controller('MyFirstController', ['$scope', function($scope) {
 		this.decrementCount = function() {
-			$scope.count.value--;
+			$scope.count--;
 		};
 	}]);
 
 	app.controller('MySecondController', ['$scope', function($scope) {
 		this.incrementCount = function() {
-			$scope.count.value++;
+			$scope.count++;
 		};
 
 	}]);

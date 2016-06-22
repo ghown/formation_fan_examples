@@ -1,21 +1,13 @@
 (function() {
 	'use strict';
 
-	var myModule = angular.module('myModule', []);
+	var app = angular.module('myModule', []);
 
-	myModule.service('hello', ['$window', function($window) {
+	app.service('hello', ['$window', function($window) {
 		return {
 			welcome: function(name) {
-				$window.alert('Hello ' + name + '!');
+				$window.alert('Is it ' + name + ' you\'re looking for?');
 			}
-		};
-	}]);
-
-	var app = angular.module('myApp', ['myModule']);
-	app.controller('MyController', ['$scope', 'hello', function($scope, hello) {
-		$scope.sayHello = function(name) {
-			hello.welcome(name);
-			console.log(name);
 		};
 	}]);
 })();

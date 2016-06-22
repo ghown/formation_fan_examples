@@ -2,9 +2,9 @@
 	'use strict';
 
 	var someone = {
-		lastname: 'DUPOND',
-		firstname: 'Marcel',
-		age: 35
+		lastname: 'PIRES',
+		firstname: 'Maxime',
+		age: 20
 	};
 
 	var app = angular.module('myApp', []);
